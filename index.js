@@ -1,4 +1,7 @@
-import request from './src/utils/request.js'
+import {
+    petFindByStatus,
+    petFindByTags
+} from './src/api/pet.js'
 
 // 简单使用
 // axios.get('https://petstore3.swagger.io/api/v3/pet/findByStatus?status=available')
@@ -6,11 +9,8 @@ import request from './src/utils/request.js'
 //         console.log(res.data)
 //     })
 
-request({
-    url: '/pet/findByStatus',
-    params: {
-        status: 'available'
-    }
+petFindByStatus({
+    status: 'available'
 }).then(res => {
     console.log(res.data)
 })
