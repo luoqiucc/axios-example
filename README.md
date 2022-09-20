@@ -1,2 +1,14 @@
 # axios-example
-axios的使用示例
+*axios使用示例*  
+
+---------------------------------
+
+## axios的一些常见问题
+### 跨域问题
+*No 'Access-Control-Allow-Origin' header is present on the requested resource.*
+1. 前端解决  
+以Vue像项目为例，打开vue配置文件通过配置代理解决。  
+官方文档: [https://cli.vuejs.org/zh/config/#devserver-proxy](https://cli.vuejs.org/zh/config/#devserver-proxy)
+2. 后端解决  
+
+### 对axios进行二次封装
